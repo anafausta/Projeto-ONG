@@ -1,0 +1,14 @@
+[
+  { "ano": 2025, "mes": "Janeiro",   "racao": 500, "agua": 200, "vacina": 150 },
+  { "ano": 2025, "mes": "Fevereiro", "racao": 480, "agua": 190, "vacina": 140 },
+  { "ano": 2025, "mes": "Março",     "racao": 510, "agua": 205, "vacina": 160 },
+  { "ano": 2025, "mes": "Abril",     "racao": 495, "agua": 198, "vacina": 150 },
+  { "ano": 2025, "mes": "Maio",      "racao": 520, "agua": 210, "vacina": 170 },
+  { "ano": 2025, "mes": "Junho",     "racao": 530, "agua": 215, "vacina": 180 },
+  { "ano": 2025, "mes": "Julho",     "racao": 540, "agua": 220, "vacina": 190 },
+  { "ano": 2025, "mes": "Agosto",    "racao": 560, "agua": 225, "vacina": 200 },
+  { "ano": 2025, "mes": "Setembro",  "racao": 550, "agua": 230, "vacina": 185 },
+  { "ano": 2025, "mes": "Outubro",   "racao": 570, "agua": 235, "vacina": 210 },
+  { "ano": 2025, "mes": "Novembro",  "racao": 580, "agua": 240, "vacina": 220 },
+  { "ano": 2025, "mes": "Dezembro",  "racao": 600, "agua": 250, "vacina": 230 }
+]

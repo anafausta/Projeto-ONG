@@ -1,0 +1,418 @@
+/* Reset Geral 
+
+--ver o carrossel
+--centralizar ou justificar os textos
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img.img-fluid.my-3 {
+  width: 60%;        /* ocupa 60% da largura do container */
+  max-width: 30rem;  /* limite máximo (~480px) */
+  height: auto;      /* mantém proporção */
+  display: block;
+  margin: 1rem auto; /* centraliza na página */
+  border-radius: 0.5rem;         /* bordas arredondadas */
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15); /* sombra suave */
+  border: 0.06rem solid #eee; 
+
+}
+
+.video-container {
+  width: 80%;        /* ocupa 80% da largura da tela */
+  max-width: 60rem;  /* limite máximo (~960px) para não ficar gigante */
+  margin: 0 auto;    /* centraliza na página */
+}
+
+.video-container video {
+  width: 100%;       /* ocupa toda a largura do container */
+  height: auto;      /* mantém proporção */
+  border-radius: 0.5rem; /* opcional: bordas arredondadas */
+}
+
+footer {
+  background-color: #f5e6d3;   /* bege suave, neutro */
+  color: #5a4a42;              /* marrom/cinza quente para contraste */
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  border-top: 2px solid #e0bfb8; /* detalhe rosado discreto */
+  margin-top: 0;
+} 
+/* Carrossel */
+#carrossel-home {
+  display: flex;
+  width: 95%;
+  max-width: 80rem;
+  margin: 0 auto 4%;
+  margin-bottom: 2rem;
+  min-height: 50vh; /* garante altura mínima */
+}
+
+#carrossel-home .carousel-inner {
+  height: 80vh; /* mantém altura consistente */
+}
+
+#carrossel-home .carousel-item img {
+  width: 100%;
+  height: 100%; /* ocupa todo o container */
+  object-fit: cover;
+  object-position: center center; /* centraliza a parte mais importante da imagem */
+  display: block;          /* remove possíveis gaps */
+  margin: 0;
+
+}
+
+/* Navbar */
+.navbar {
+  padding: 1rem 3rem;              /* antes era 15px 50px */
+  background-color: #e75d8b;
+  font-family: 'Nunito', Arial, sans-serif;
+}
+
+
+/* Títulos */
+h1, h2, h5 {
+  color: hwb(342 34% 9%);
+  font-family: 'Sour Gummy', Arial, sans-serif;
+  margin-bottom: 2rem;       /* espaçamento relativo */
+  text-align: center; 
+}
+
+html,body {
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 1rem;           /* relativo ao padrão */
+  line-height: 1.6;          /* altura de linha proporcional */
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Tabelas */
+table, .tabela-eventos {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: center;
+  border: 0.0625rem solid #dddddd; /* 1px → rem */
+}
+
+th {
+  background-color: #dd508b;
+  color: white;
+}
+
+tr:nth-child(even) { background-color: #f9f9f9; }
+tr:hover { background-color: #e48ab4; }
+
+/* Botões */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;              /* relativo */
+  padding: 0.5em 1em;           /* espaçamento relativo */
+  border-radius: 0.5rem;        /* borda arredondada relativa */
+  transition: all 0.3s ease;
+  font-weight: bold;
+  background-color: #f7e8d0;    /* bege */
+  color: #e75d8b;               /* rosa no texto */
+  border: 0.0625rem solid #e75d8b; /* 1px → rem */
+  text-align: center;
+}
+
+/* Hover / click */
+.btn:hover,
+.btn:active {
+  background-color: #e43a72;    /* rosa */
+  color: #fff;                  /* texto branco */
+  transform: scale(1.05);       /* leve aumento */
+}
+
+/* Carrossel */
+
+
+/* Cards Home */
+.card-home {
+  border-radius: 0.9375rem; /* ~15px */
+  background-color: #f6e9e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card-home img {
+  width: 100%;
+  height: auto;         /* deixa a imagem fluida */
+  object-fit: cover;
+}
+
+.card-home:hover {
+  transform: translateY(-0.3125rem); /* ~5px */
+  box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.2);
+}
+
+/* Cards Home */
+.card-home {
+  border-radius: 0.9375rem; /* 15px → rem */  
+  background-color: #f6e9e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+
+.card-home img {
+  height: 25vh; /* proporcional à altura da tela */
+  object-fit: cover;
+}
+
+
+.card-home:hover {
+  transform: translateY(-0.3125rem); /*5px → rem */
+  box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.2); /* 8px 20px → rem */
+}
+
+
+
+/* Main */
+main {
+  text-align: center;
+  background-color: #ffedc9;
+  padding: 5vh 5vw;     
+  flex: 1; /* ocupa todo o espaço disponível */
+}
+
+
+/* Formulário */
+.campo{
+  display: flex;
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.campo label {
+  flex: 0 0 20%;        /* ocupa 20% da largura */
+  text-align: right;
+  margin-right: 0.625rem;
+  min-width: 6rem;
+}
+
+.campo input, .campo select, .campo textarea {
+  flex: 1 1 0; 
+  padding: 0.3125rem;
+  border: 0.06rem solid #ccc;
+  min-width: 0;
+  max-width: 100%;
+  border-radius: 0.3125rem;
+}
+
+
+.acoes {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem; /* 10px → rem */
+  margin: 0.625rem; /* 10px → rem */
+  flex-direction: column;
+  align-items: center;
+}
+
+.acoes button {
+  padding: 0.5rem; /* 8px → rem */
+  background-color: #fff;
+  border-radius: 0.3125rem; /* 5px → rem */
+  cursor: pointer;
+  border-color: #e43a72;
+}
+
+.acoes button:hover {
+  background-color: #e43a72;
+  color: white;
+}
+
+.acoes a{
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
+  width: 100%;
+}
+
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #e75d8b;
+  font-size: 1rem; /* 16px → rem */
+}
+
+/* Perfis Animais */
+.container-perfis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* 250px → rem */
+  gap: 1.5625rem; /* 25px → rem */
+  width: 80%;
+  margin: auto;
+}
+
+
+figcaption h2 {
+  font-size: 1.6rem;       /* tamanho relativo */
+  margin-bottom: 0.5rem;   /* espaço pequeno abaixo */
+  font-family: 'Sour Gummy', sans-serif;
+  color: hwb(342 34% 9%);
+}
+
+.perfil-animal {
+  border: 0.1em solid rgb(226, 121, 138);
+  border-radius: 0.8em;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+
+}
+
+.perfil-animal img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+
+}
+
+.perfil-animal img:hover { transform: scale(1.05); }
+
+.perfil-animal figcaption {
+  padding: 1rem;
+  background-color: #fff0f5;
+}
+
+/* Fieldset */
+fieldset {
+  border: 0.0625rem solid #e43a72; /* 1px → rem */
+  background-color: #f7eee3;
+  border-radius: 1rem;
+
+  width: 80%;
+  max-width: 25rem;   /* limite máximo (~400px) */
+  min-height: 30vh;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch; /* garante que os filhos respeitem a largura */
+  margin: 2rem auto;
+  box-sizing: border-box; /* inclui padding na largura total */
+}
+
+.text-justify {
+  text-align: justify;       /* alinhamento dos dois lados */
+  text-justify: inter-word;  /* melhora a distribuição */
+  margin-bottom: 1.5rem; 
+}
+
+/* ===== Exemplos solicitados no trabalho conforme moodle===== */
+
+/* Exemplo de SELETOR COMPOSTO
+   (aplica estilo a botões dentro de um card) */
+.card-home .btn {
+  border: 0.125rem solid #e75d8b;
+}
+
+/* Exemplo de PSEUDOCLASSE
+   (muda cor do botão quando o mouse está em cima) */
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Exemplo de PSEUDOELEMENTO
+   (adiciona conteúdo antes do título h1) */
+h1::before {
+  content: "🐾 ";
+  font-size: 1.5rem;
+}
+
+
+
+
+/* Título com tamanho fluido (aumenta e diminui com a tela) */
+h1 {
+  font-size: clamp(1.375rem, 4vw, 2.5rem);
+}
+
+
+
+/* 🔻 MEDIA QUERY PARA TELAS MENORES QUE 768px */
+/* 🔻 MEDIA QUERY PARA TELAS MENORES QUE 768px */
+@media (max-width: 600px) { /* 600px → rem */
+  /* Navbar com menos espaço */
+  .navbar {
+    padding: 0.625rem; /* 10px → rem */
+  }
+
+  /* Formulário sem elementos lado a lado */
+  .campo {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .campo label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  #qrcode_pix {
+    width: 30%; 
+    max-width: 15rem;   /* já relativo */
+    max-height: 15rem;  /* já relativo */
+    height: 30%;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  /* Cartões com menos sombra */
+  .card-home:hover {
+    transform: none;
+  }
+
+  .campo input,
+  .campo select,
+  .campo textarea {
+    max-width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+  }
+}
+
+/* 🔻 MEDIA QUERY PARA CELULAR (TELAS MENORES QUE 480px) */
+@media (max-width: 480px) { /* 480px → rem */
+  .navbar img {
+    width: 5rem; /* 80px → rem */
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.375rem; /* 22px → rem */
+  }
+
+  .btn-login {
+    padding: 0.3125rem 0.625rem; /* 5px 10px → rem */
+    font-size: 0.875rem; /* 14px → rem */
+  }
+
+  table {
+    font-size: 0.75rem; /* 12px → rem */
+  }
+}

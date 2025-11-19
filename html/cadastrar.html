@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animais do Bem - Cadastre-se</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light ">
+			<div class="container">
+				<img src="/logos/logo_site.png" alt="Logo" width="120" height="50" class="d-inline-block align-text-top">
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="menuNav">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="quemsomos.html">Quem Somos</a></li>
+						<li class="nav-item"><a class="nav-link" href="adote.html">Adote</a></li>
+						<li class="nav-item"><a class="nav-link" href="doar.html">Doar</a></li>
+						<li class="nav-item"><a class="nav-link" href="parceiros.html">Parceiros</a></li>
+						<li class="nav-item"><a class="nav-link" href="portal.html">Portal da Transparência</a></li>
+						<li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+					</ul>
+
+					<div>
+						<a class="btn btn-login me-2" href="login.html">Login</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<main>
+		<div class="container-principal">
+			<h1>Cadastro</h1>
+
+			<form class="login-form">
+				<fieldset>
+					<h2>Dados Pessoais</h2>
+					<div class="campo">
+						<label for="nome">Nome Completo</label>
+						<input type="text" id="nome" name="nome" required>
+					</div>
+
+					<div class="campo">
+						<label for="cpf">CPF</label>
+						<input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+					</div>
+
+					<div class="campo">
+						<label for="email">E-mail</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+
+					<div class="campo">
+						<label for="telefone">Telefone</label>
+						<input type="tel" id="telefone" name="telefone" placeholder="99 99999-9999">
+					</div>
+
+					<hr>
+
+					<h2>Endereço</h2>
+
+					<div class="campo">
+						<label for="rua">Rua</label>
+						<input type="text" id="rua" name="rua" required>
+					</div>
+
+					<div class="campo">
+						<label for="cidade">Cidade</label>
+						<input type="text" id="cidade" name="cidade" required>
+					</div>
+
+					<div class="campo">
+						<label for="estado">Estado</label>
+						<select name="estado" id="estado">
+							<option value="">Selecione o estado</option>
+							<option value="AC">AC</option>
+							<option value="AL">AL</option>
+							<option value="AP">AP</option>
+							<option value="AM">AM</option>
+							<option value="BA">BH</option>
+							<option value="CE">CE</option>
+							<option value="DF">DF</option>
+							<option value="ES">ES</option>
+							<option value="GO">GO</option>
+							<option value="MA">MA</option>
+							<option value="MT">MT</option>
+							<option value="MS">MS</option>
+							<option value="MG">MG</option>
+							<option value="PA">PA</option>
+							<option value="PB">PB</option>
+							<option value="PR">PR</option>
+							<option value="PE">PE</option>
+							<option value="PI">PI</option>
+							<option value="RJ">RJ</option>
+							<option value="RN">RN</option>
+							<option value="RS">RS</option>
+							<option value="RO">RO</option>
+							<option value="RR">RR</option>
+							<option value="SC">SC</option>
+							<option value="SP">SP</option>
+							<option value="SE">SE</option>
+							<option value="TO">TO</option>
+						</select>
+					</div>
+
+					<div class="campo">
+						<label for="complemento">Complemento</label>
+						<input type="text" id="complemento" name="complemento">
+					</div>
+
+					<div class="campo">
+						<label for="cep">CEP</label>
+						<input type="text" id="cep" name="cep" placeholder="00000-000" required>
+					</div>
+
+					<hr>
+
+					<div class="campo">
+						<label for="senha">Senha:</label>
+						<input type="password" id="senha" name="senha" maxlength="8" placeholder="Digite sua senha" required>
+					</div>
+
+					<div class="campo">
+						<label for="confirma-senha">Confirme a senha:</label>
+						<input type="password" id="confirma-senha" maxlength="8" name="confirma-senha" placeholder="Repita sua senha" required>
+					</div>
+					<button type="submit" class="btn">Cadastrar</button>
+				</fieldset>
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; 2025 Animais do Bem. Todos os direitos reservados.</p>
+		<p>Contato: <a href="mailto:contato@animaisdobem.org">animaisdobem@ifsp.edu.br</a></p>
+	</footer>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="../javascript/scripts.js"></script>
+</body>
+</html>
+
+
+           

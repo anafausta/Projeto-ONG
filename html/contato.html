@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animais do Bem - Contato</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light ">
+			<div class="container">
+				<img src="../logos/logo_site.png" alt="Logo" width="120" height="50" class="d-inline-block align-text-top">
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="menuNav">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="quemsomos.html">Quem Somos</a></li>
+						<li class="nav-item"><a class="nav-link" href="adote.html">Adote</a></li>
+						<li class="nav-item"><a class="nav-link" href="doar.html">Doar</a></li>
+						<li class="nav-item"><a class="nav-link" href="parceiros.html">Parceiros</a></li>
+						<li class="nav-item"><a class="nav-link" href="portal.html">Portal da Transparência</a></li>
+						<li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+					</ul>
+
+					<div>
+						<a class="btn btn-login me-2" href="login.html">Login</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<main>
+		<div class="container-principal">
+		<h1>Fale com a gente!</h1>
+		<p>Se ficou alguma dúvida, quer saber mais sobre o que fazemos, tem uma ideia legal pra compartilhar ou deseja colaborar com nossos projetos, esse é o lugar certo!</p>
+		<p>Nossa equipe está pronta para responder e ajudar no que for necessário 🐾</p>
+		<p>Preencha o formulário abaixo:</p>
+
+       
+		<form id="formContato"action=" " > <fieldset>
+			<div class="campo">
+				<label for="nome">Nome</label>
+				<input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+			</div>
+
+			<div class="campo">
+				<label for="email">E-mail</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+
+			<div class="campo">
+				<label for="telefone">Telefone de Contato</label>
+				<input type="tel" id="telefone" name="telefone" placeholder="11 99999-9999" required>
+			</div>
+			
+			<div class="campo">
+				<label for="assunto">Qual o assunto?</label>
+				<select type="assunto" name="assunto">
+					<option value="">Selecione o assunto</option>
+					<option value="adocao">Adoção</option>
+					<option value="doacao">Doação</option>
+					<option value="sugestao">Sugestão</option>
+					<option value="duvida">Dúvidas sobre a ONG</option>
+					<option value="outros">Outros</option>
+				</select>
+			</div>
+
+			<div class="campo">
+				<label for="descricao">Descrição</label>
+				<textarea name="descricao" id="descricao" rows="8" placeholder="Escreva sua mensagem aqui!" required></textarea>
+                
+			</div>
+
+			<div>
+				<button type="submit" class="btn">Enviar</button>
+			</div>
+		</fieldset>
+	</form>
+	</div>
+	</main>
+
+	<footer>
+		<p>&copy; 2025 Animais do Bem. Todos os direitos reservados.</p>
+		<p>Contato: <a href="mailto:contato@animaisdobem.org">animaisdobem@ifsp.edu.br</a></p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="../javascript/scripts.js"></script>
+</body>
+</html>
