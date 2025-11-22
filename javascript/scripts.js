@@ -161,3 +161,13 @@ document.addEventListener("DOMContentLoaded", () => {
       tbody.innerHTML = `<tr><td colspan="5">Erro ao carregar os dados!</td></tr>`;
     });
 });
+
+const video = document.getElementById('video-slide');
+const carousel = new bootstrap.Carousel('#carouselExample', {
+  ride: false 
+});
+
+video.addEventListener('ended', () => {
+  carousel.next(); 
+});
+
