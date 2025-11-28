@@ -1,4 +1,3 @@
-// ---------- Funções de validação (colar no topo do arquivo) ----------
 function validarCPF(cpf) {
   cpf = cpf.replace(/\D/g, "");
   if (cpf.length !== 11) return false;
@@ -21,7 +20,6 @@ function validarEmail(email) {
 }
 
 function validarTelefone(telefone) {
-  // aceita com ou sem formatação; exige DDD + 8 ou 9 dígitos (total 10 ou 11 números)
   const limpo = telefone.replace(/\D/g, "");
   return /^\d{10,11}$/.test(limpo);
 }
@@ -30,9 +28,8 @@ function validarCEP(cep) {
   const limpo = cep.replace(/\D/g, "");
   return /^\d{8}$/.test(limpo);
 }
-// -------------------------------------------------------------------
 
-// ---------- Funções de formatação ----------
+
 function formatarCPF(cpf) {
   return cpf
     .replace(/\D/g, "")
@@ -47,7 +44,6 @@ function formatarCEP(cep) {
     .replace(/(\d{5})(\d)/, "$1-$2");
 }
 
-// (11) 98888-7777
 function formatarTelefone(telefone) {
   const nums = telefone.replace(/\D/g, "");
   if (nums.length < 10) return telefone;
@@ -63,7 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const campoTelefone = document.getElementById("telefone");
   const campoCEP = document.getElementById("cep");
 
-  // CPF ao digitar
   if (campoCPF) {
     campoCPF.addEventListener("input", () => {
       let valor = campoCPF.value.replace(/\D/g, "");
@@ -72,7 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // TELEFONE ao digitar
   if (campoTelefone) {
     campoTelefone.addEventListener("input", () => {
       let valor = campoTelefone.value.replace(/\D/g, "");
@@ -81,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // CEP ao digitar
   if (campoCEP) {
     campoCEP.addEventListener("input", () => {
       let valor = campoCEP.value.replace(/\D/g, "");
@@ -218,12 +211,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const resumo = `
-Nome: ${nome}
-E-mail: ${email}
-Telefone: ${telefone}
-Assunto: ${assunto}
-Mensagem: ${descricao}
-    `;
+      Nome: ${nome}
+      E-mail: ${email}
+      Telefone: ${telefone}
+      Assunto: ${assunto}
+      Mensagem: ${descricao}
+          `;
 
     alert("Realizado com sucesso!\n\n" + resumo);
   });
